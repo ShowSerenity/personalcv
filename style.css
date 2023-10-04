@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'avenirheavy';
+    src: url('fonts/avenir-85-heavy/avenir-85-heavy-webfont.woff2') format('woff2'),
+         url('fonts/avenir-85-heavy/avenir-85-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+        
+body {
+    color: #2C2F83;
+    background-color: #FCE7DA;
+    margin: 0;
+    padding: 0;
+     font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'avenirheavy';
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'avenirheavy';
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 60px;
+}
+
+h4 {
+    font-family: 'avenirheavy';
+    font-size: 40px;
+    font-weight: bold;
+}
+
+header {
+    background-color: #feeee3;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header img {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+nav ul li a {
+    text-decoration: none;
+    color: #2C2F83;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4145AC
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+.project-block {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: filter 0.3s, transform 0.3s;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-block:hover {
+    filter: brightness(0.7);
+    transform: scale(1.05);
+}
+
+.project-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 29px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-block:hover .project-name {
+    opacity: 1;
+}
+
+.project-block {
+    width: 300px;
+    height: 450px;
+}
+
+.project-page {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.project-padding {
+    padding: 60px;
+}
+
+.project-text {
+    font-size: 22px;
+    line-height: 1.5;
+    max-width: 50%;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.collabs {
+    font-size: 26px;
+    max-width: 50%;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+
+.project-image {
+    width: 97%;
+    height: 750px;
+    margin: 20px auto;
+    display: block;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.contact-container {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#media-container {
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+#media-scroll {
+    margin-top: 20px;
+    display: flex;
+    animation: scrollImages 12s linear infinite;
+}
+
+#media-scroll img {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@keyframes scrollImages {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+.video-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.video-section iframe {
+    width: 940px;
+    height: 530px;
+    display: block;
+    margin: 0 auto;
+}
+
+.video-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.video-row iframe {
+    flex: 1;
+    margin: 0 10px; 
+    max-width: 300px;
+    height: 176px
+}
+
+.gallery {
+    margin: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 2px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.photo img {
+    width: 380px;
+    height: 350px;
+    border-radius: 2px;
+    object-fit: cover;
+}
+
+.icon {
+    display: inline-block;
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+#icons {
+    margin-bottom: 10px;
+}
+
+header .icon img {
+    width: 32px;
+    height: auto;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #feeee3;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4B0082;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #000080;
+}
+
