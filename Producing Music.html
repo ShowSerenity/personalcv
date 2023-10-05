@@ -2,36 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="icon" type="image/icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>  
+    <title>Home</title>  
 </head>
 <body>
-    <header>
-        <img src="pics/Anime-Guitar-Girl-PNG-Image.png" alt="Story Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="porfolio.html">Portfolio</a></li>
-            </ul>
+
+    <header class="bg-feeee3 text-center py-4">
+
+        <!--Logo-->
+        <img src="pics/Anime-Guitar-Girl-PNG-Image.png" alt="Logo" class="img-fluid">
+        
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-feeee3">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
+        <!--Links-->
         <div id="icons">
-            <a href="https://www.youtube.com/channel/UCoiCI-hrRZCS63ETqBfeLBg" target="_blank" class="icon">
-                <img src="icons/youtube.png" alt="YouTube Icon" width="32" height="32">
+            <a href="https://www.youtube.com/channel/UCoiCI-hrRZCS63ETqBfeLBg" target="_blank" class="icon" data-toggle="tooltip" title="Visit My Youtube Channel">
+                <i class="fa-brands fa-youtube fa-bounce fa-2xl" style="color: #000000"></i>
             </a>
-            <a href="https://open.spotify.com/user/zp3xpof1yb2melw07iknqknuv?si=26c47d56e0dd4a65" target="_blank" class="icon">
-                <img src="icons/spotify.png" alt="Spotify Icon" width="32" height="32">
+            <a href="https://open.spotify.com/user/zp3xpof1yb2melw07iknqknuv?si=26c47d56e0dd4a65" target="_blank" class="icon" data-toggle="tooltip" title="Listen for my Music here">
+                <i class="fa-brands fa-spotify fa-flip fa-2xl" style="color: #000000;"></i>
             </a>
-            <a href="https://on.soundcloud.com/9oBka" target="_blank" class="icon">
-                <img src="icons/soundcloud.png" alt="Soundcloud Icon" width="32" height="32">
+            <a href="https://on.soundcloud.com/9oBka" target="_blank" class="icon" data-toggle="tooltip" title="And here">
+                <i class="fa-brands fa-soundcloud fa-beat fa-2xl" style="color: #000000;"></i>
             </a>
         </div>
+
     </header>
 
     <main>
+
+        <button
+            type="button"
+            class="btn btn-danger btn-floating btn-lg"
+            id="btn-back-to-top"
+            >
+        <i class="fas fa-arrow-up"></i>
+        </button>
+
         <div class="project-page">
             <div class="project-padding">
                 <h1 style="text-align: left;">Producing Music</h1>
@@ -92,5 +126,17 @@
         </a>
         <p>&copy; 2023 Story</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/66f64c353b.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+    
 </body>
 </html>
